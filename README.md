@@ -153,8 +153,9 @@ piglet flags list --json > flags.json
 
 A Claude Code plugin is available for natural language interaction with piglet:
 
-```bash
-claude /plugin add cased/claude-code-plugins --path plugins/piglet
+```
+/plugin marketplace add cased/claude-code-plugins
+/plugin install piglet
 ```
 
 Once installed, you can ask Claude things like:
