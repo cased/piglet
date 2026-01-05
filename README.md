@@ -149,6 +149,20 @@ piglet flags update 123 --inactive
 piglet flags list --json > flags.json
 ```
 
+## Claude Code Plugin
+
+A Claude Code plugin is available for natural language interaction with piglet:
+
+```bash
+claude /plugin add cased/claude-code-plugins --path plugins/piglet
+```
+
+Once installed, you can ask Claude things like:
+- "What feature flags do we have?"
+- "Create a flag called dark-mode with 50% rollout"
+- "Disable the beta-feature flag"
+- "List all cohorts"
+
 ## License
 
 MIT
