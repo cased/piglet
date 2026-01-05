@@ -120,11 +120,11 @@ piglet projects get 123          # Get project details
 piglet flags list
 
 # JSON output
-piglet flags list --json
+piglet --json flags list
 
 # Plain tab-separated (good for scripting)
-piglet flags list --plain
-piglet flags list --plain | cut -f2  # Extract just the keys
+piglet --plain flags list
+piglet --plain flags list | cut -f2  # Extract just the keys
 ```
 
 ## Examples
@@ -146,7 +146,7 @@ piglet flags create --key new-feature --rollout-percentage 100 --active
 piglet flags update 123 --inactive
 
 # Export all flags as JSON
-piglet flags list --json > flags.json
+piglet --json flags list > flags.json
 ```
 
 ## Claude Code Plugin
